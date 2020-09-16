@@ -2,8 +2,7 @@ import csv
 import os
 import pandas as pd
 
-csvpath = os.path.join('..', '..', 'HOMEWORK02', '02-Python',
-                       'Instructions', 'PyBank', 'Resources', 'budget_data.csv')
+csvpath = os.path.join('Resources', 'budget_data.csv')
 
 with open(csvpath) as csvfile:
 
@@ -16,7 +15,7 @@ with open(csvpath) as csvfile:
     num_months = len(csvrep) - 1
     print(f'Total Months: {num_months}')
 
-df = "../../HOMEWORK02/02-Python/Instructions/PyBank/Resources/budget_data.csv"
+df = "Resources/budget_data.csv"
 df_df = pd.read_csv(df)
 # print(df_df)
 
